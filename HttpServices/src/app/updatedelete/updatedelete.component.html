@@ -1,0 +1,13 @@
+<h1>HTTP Services </h1>
+<p><b>Now add your new posts here...</b></p>
+<input type="text" (keyup.enter)="createNewPost()" [(ngModel)]="userInput" class="form-control btn btn-outline-danger">
+<p><b>Here are the list of posts fetched from HTTP Server</b></p>
+<ul>
+  <li *ngFor="let iPost of myPosts">
+    {{iPost.title}}
+    <button (click)="updateExistingPost(iPost)" class="btn">Update</button>
+    <button (click)="deleteExistingPost(iPost)" class="btn">Delete</button>
+  </li> 
+</ul>
+
+

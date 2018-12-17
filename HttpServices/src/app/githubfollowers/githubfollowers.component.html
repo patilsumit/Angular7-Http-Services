@@ -1,0 +1,18 @@
+<h1>HTTP Services With GitHub Followers </h1>
+
+
+<p><b>Here are the list of posts fetched from HTTP Server</b></p>
+
+  <div *ngFor="let iFollower of myFollowers" style="margin-left: 10px">
+    <!-- {{iFollower.avtar}} -->
+    <img src="{{iFollower.avatar_url}}" alt="Not Found" width="100" height="100" style="display:block;">
+    <h2 >{{iFollower.login}}</h2>
+    <h3 ><a href="{{iFollower.url}}">{{iFollower.url}}</a></h3>
+    <!-- <button (click)="updateExistingPost(iPost)" class="btn">Update</button> -->
+    <!-- <button (click)="deleteExistingPost(iPost)" class="btn">Delete</button> -->
+  </div> 
+
+  
+
+
+

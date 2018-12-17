@@ -1,0 +1,7 @@
+<input type="text" (keyup.enter)="createPost(title)" #title class="form-control" 
+  placeholder="Enter Post title">
+<ul class="list-group">
+    <li *ngFor="let posts of myPosts" class="list-group-item">
+      {{posts.title}}
+    </li>
+</ul>

@@ -1,0 +1,13 @@
+<h1> HTTP services - Implemented as a service - With Error Handling </h1>
+<p><b>Here are the list of posts fetched from HTTP server</b></p>
+<ul>
+  <li *ngFor="let iPost of myPosts">
+    {{ iPost.title }}
+    <button (click)="updateExistingPost(iPost)">Update</button>
+    <button (click)="deleteExistingPost(iPost)">Delete</button>
+  </li>
+
+</ul>
+
+<p><b>Now add your new posts here...</b></p>
+<input type="text" (keyup.enter)="createNewPost(myNewPost)" #myNewPost>
